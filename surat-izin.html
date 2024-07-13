@@ -13,17 +13,23 @@
   <link rel="stylesheet" href="assets/css/libraries.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+      .center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  </style>
 </head>
 
 <body>
-  <div class="wrapper">
     <!-- =========================
         Header
     =========================== -->
     <header class="header header-transparent header-layout1">
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="#">
             <img src="assets/images/logo/Logo-Vespa-NoBG.png" class="logo-light" alt="logo" style="height: 15%; width: 15%;"> 
             <img src="assets/images/logo/Logo-Vespa-NoBG.png" class="logo-dark" alt="logo" style="height: 15%; width: 15%;">
             <span class="btn btn__primary btn__hover2 btn__link">KOPI VESPA</span>
@@ -34,22 +40,22 @@
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
               <li class="nav__item">
-                <a href="index.html" class="dropdown-toggle nav__item-link">Beranda</a>
+                <a href="index.html" class="dropdown-toggle nav__item-link active">Beranda</a>
               </li><!-- /.nav-item -->
               <li class="nav__item">
-                <a href="menu-gallery.html" class="dropdown-toggle nav__item-link">Varian Menu</a>
+                <a href="varian-menu.html" class="dropdown-toggle nav__item-link">Varian Menu</a>
               </li><!-- /.nav-item -->
               <li class="nav__item">
-                <a href="gallery-grid.html" class="dropdown-toggle nav__item-link">Galeri Foto</a>
+                <a href="galeri-foto.html" class="dropdown-toggle nav__item-link">Galeri Foto</a>
               </li><!-- /.nav-item -->
               <li class="nav__item with-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Tentang</a>
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Tentang</a>
                 <ul class="dropdown-menu">
-                  <li class="nav__item"><a href="our-story.html" class="nav__item-link">Cerita Kita</a></li>
+                  <li class="nav__item"><a href="cerita-kita.html" class="nav__item-link">Cerita Kita</a></li>
                   <!-- /.nav-item -->
-                  <li class="nav__item"><a href="contacts.html" class="nav__item-link">Kontak</a></li>
+                  <li class="nav__item"><a href="kontak.html" class="nav__item-link">Kontak</a></li>
                   <!-- /.nav-item -->
-                  <li class="nav__item"><a href="license.html" class="nav__item-link">Surat Izin</a></li> <!-- /.nav-item -->
+                  <li class="nav__item"><a href="surat-izin.html" class="nav__item-link">Surat Izin</a></li> <!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
               <!-- /.nav-item -->
@@ -67,124 +73,69 @@
     <!-- ========================
        page title 
     =========================== -->
-    <section class="page-title page-title-layout1 text-center bg-overlay bg-parallax">
-      <div class="bg-img"><img src="assets/images/backgrounds/5.jpg" alt="background"></div>
+    <section class="page-title page-title-layout2 text-center bg-overlay bg-parallax">
+      <div class="bg-img"><img src="assets/images/backgrounds/2.jpg" alt="background"></div>
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <span class="pagetitle__subheading">Semua Tentang Kita</span>
-            <h1 class="pagetitle__heading">Cerita Kita</h1>
-            <nav aria-label="breadcrumb">
+          <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1">
+            <span class="pagetitle__subheading">1 Juli 2024</span>
+            <h1 class="pagetitle__heading">Nomor Induk Berusaha</h1>
+              <nav aria-label="breadcrumb">
               <ol class="breadcrumb justify-content-center">
                 <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                 <li class="breadcrumb-item"><a href="#">Tentang</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Cerita Kita</li>
+                <li class="breadcrumb-item active" aria-current="page">Surat Izin</li>
               </ol>
             </nav>
-          </div><!-- /.col-lg-12 -->
+          </div><!-- /.col-lg-8 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- /.page-title -->
 
-    <!-- =====================
-       About
-    ======================== -->
-    <section class="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading heading-layout1 text-center mb-20">
-              <span class="heading__subtitle">Selamat Datang di Kopi Vespa </span>
-              <h2 class="heading__title">Awal Mula</h2>
-              <div class="heading__icon">
-                <img src="assets/images/shapes/shape2.png" alt="heading img">
-              </div>
-            </div><!-- /.heading -->
-          </div><!-- /.col-lg-6  -->
-        </div><!-- /.row -->
-        <div class="row align-items-center">
-          <div class="col-sm-12 col-md-12 col-lg-4 text-center">
-            <div class="mr-30" data-aos="fade-right">
-              <img src="assets/images/backgrounds/yang-punya.jpg" alt="logo" class="mb-10" style="height: 100%; width: 100%;">
-            </div>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-sm-12 col-md-12 col-lg-8">
-            <div class="text-center-xs-sm-md ml-30" data-aos="fade-left">
-              <p><b>Youdhy Trychatour Seftyawan merupakan owner Kopi Vespa yang lahir di Cirebon tanggal 6 September 1995, pendidikan terakhir S1 dibidang tehnik informatika cirebon lebih tepatnya di STMIK WIT, Yudi menggeluti dibidang usaha ini sejak 3 tahun lalu yaitu tepatnya tahun 2022. Tercetusnya usaha ini pada awalnya hanya terlintas sebuah ide untuk menjual produk yang berbeda dari konsep pada umumnya. Dengan motor Vespa yang dihias begitu menarik dan menggunakan peralatan yang lengkap untuk menyajikan minuman jadi berdirilah usaha ini yang masih berjalan hingga sekarang.</b></p>
-              <p class="mb-20">
-                <b>Visi :</b><br>
-                “Menjadikan kopi vespa sebagai coffee brand life style terdepan di Indonesia dan sebagai
-                wadah untuk meraih mimpi”.<br>
-                <b>Misi :</b><br>
-                1. Menyediakan coffee yang berkualitas <br>
-                2. Memberikan new experience bagi pembeli dengan tema kopi vespa <br>
-                3. Menempatkan pelanggan sebagai prioritas</p>
-            </div>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.About -->
+  <!-- ======================
+    Blog Single
+  ========================= -->
+  <section class="blog blog-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1">
+          <div class="post-item">
+            <div class="post__content">
+              <div class="post__desc">
+                <p>
+                  <b>
+                  Kami sangat bersemangat untuk memperkenalkan kepada Anda nomor izin berusaha kami, yang menjadi tanda sahnya perjalanan kami dalam menyajikan kopi berkualitas dari Vespa. Seperti halnya perintis kopi legendaris yang mengubah wajah industri kopi di era mereka, kami di sini untuk menyajikan sesuatu yang istimewa kepada Anda.
+                  <br>
+                  Dari awal perjalanan kami yang dimulai dengan mimpi sederhana, kami telah melalui banyak tahapan untuk memastikan setiap aspek usaha kami memenuhi standar terbaik. Dengan nomor izin berusaha ini, kami bukan hanya memenuhi regulasi, tetapi juga berkomitmen untuk memberikan pengalaman kopi yang tak terlupakan kepada setiap pelanggan yang datang kepada kami.  
+                  <br>
+                  Kami percaya bahwa nomor izin berusaha ini adalah simbol dari dedikasi kami terhadap kualitas dan pelayanan. Seperti halnya barista legendaris yang telah menciptakan inovasi dalam setiap cangkir kopi, kami juga berkomitmen untuk terus berkembang dan mempersembahkan kopi terbaik dari Vespa kami kepada Anda.
+                  </b>
+                </p>
+              </div><!-- /.post-desc -->
+            </div><!-- /.post-content -->
+          </div><!-- /.post-item -->
+        </div><!-- /.col-lg-10 -->
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="portfolio-gallery">
+            <div class="row justify-content-center">
+              <!-- portfolio item #1 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="portfolio-item">
+                  <div class="portfolio__img center-image"> 
+                    <img src="assets/images/about/nib.png" alt="portfolio img">
+                  </div><!-- /.portfolio-img -->
+                  <div class="portfolio__hover">
+                    <a href="assets/images/about/nib.png" data-lightbox="lightbox" class="zoom__icon"></a>
+                  </div><!-- /.portfolio__hover-->
+                </div><!-- /.portfolio-item -->
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+          </div><!-- /.portfolio Gallery -->
+        </div><!-- /.col-lg-12 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /.blog Single -->
 
-    <!-- ========================
-       text Banner Layout2
-    =========================== -->
-    <section class="text-banner text-banner-layout1 text-center bg-overlay bg-overlay-gradient bg-parallax">
-      <div class="bg-img"><img src="assets/images/backgrounds/4.jpg" alt="background"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <span class="banner__subtitle">Kami Menciptakan Kenangan Lezat</span>
-            <h2 class="banner__title">Cobalah & Datang ke Kami</h2>
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.text Banner Layout2 -->
-
-    <!-- ==========================
-         fancybox layout 1
-    =========================== -->
-    <section class="fancybox-layout1 text-center pb-40">
-      <div class="container">
-        <div class="row">
-          <!-- fancybox item #2 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="fancybox-item">
-              <div class="fancybox__icon">
-                <img src="assets/images/icons/2.png" alt="icon">
-              </div><!-- /.fancybox-icon -->
-              <div class="fancybox__content">
-                <h4 class="fancybox__title">Bahan Berkualitas</h4>
-                <p class="fancybox__desc">Barista kami menggunakan biji kopi pilihan untuk sajian yang nikmat dan terjangkau.</p>
-              </div><!-- /.fancybox-content -->
-            </div><!-- /.fancybox-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- fancybox item #4 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="fancybox-item">
-              <div class="fancybox__icon">
-                <img src="assets/images/icons/4.png" alt="icon">
-              </div><!-- /.fancybox-icon -->
-              <div class="fancybox__content">
-                <h4 class="fancybox__title">Barista Kreatif</h4>
-                <p class="fancybox__desc">Banyak menu pilihan yang tersedia</p>
-              </div><!-- /.fancybox-content -->
-            </div><!-- /.fancybox-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- fancybox item #6 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="fancybox-item">
-              <div class="fancybox__icon">
-                <img src="assets/images/icons/6.png" alt="icon">
-              </div><!-- /.fancybox-icon -->
-              <div class="fancybox__content">
-                <h4 class="fancybox__title">Kopi Yang Luar Biasa</h4>
-                <p class="fancybox__desc">Kopi yang dibuat dengan penuh cinta dan perhatian.</p>
-              </div><!-- /.fancybox-content -->
-            </div><!-- /.fancybox-item -->
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /. fancybox layout 1 -->
 
 <!-- ========================
       Footer
